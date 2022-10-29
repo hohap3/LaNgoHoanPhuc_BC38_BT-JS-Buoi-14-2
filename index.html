@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Link bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Bai tap if else mo rong</title>
+  </head>
+  <body>
+    <div class="app">
+      <!-- BT 1 : Tính ngày tháng năm -->
+      <section class="section-container bt-1">
+        <h2>BT 1 : Tính ngày tháng năm</h2>
+
+        <form action="" class="form bt-1__form">
+          <div class="form-group-input">
+            <div class="form-group">
+              <input type="number" name="" id="day" placeholder="Nhập ngày" />
+            </div>
+
+            <div class="form-group">
+              <input
+                type="number"
+                name=""
+                id="month"
+                min="1"
+                max="12"
+                placeholder="Nhập tháng"
+              />
+            </div>
+
+            <div class="form-group">
+              <input type="number" name="" id="year" placeholder="Nhập năm" />
+            </div>
+          </div>
+        </form>
+
+        <button class="btn btn-submit btn-primary btn-before">
+          Ngày hôm qua
+        </button>
+        <button class="btn btn-submit btn-primary btn-after">Ngày mai</button>
+
+        <div class="result-container">
+          <p class="result"><span class="result-bt-1"></span></p>
+        </div>
+      </section>
+
+      <!-- BT 2: Tính ngày -->
+
+      <section class="section-container bt-2">
+        <h2>BT 2 : Tính ngày</h2>
+
+        <form action="" class="form bt-2__form">
+          <div class="form-group-input">
+            <div class="form-group">
+              <input
+                type="number"
+                name=""
+                id="month"
+                min="1"
+                max="12"
+                placeholder="Nhập tháng"
+              />
+            </div>
+
+            <div class="form-group">
+              <input type="number" name="" id="year" placeholder="Nhập năm" />
+            </div>
+          </div>
+
+          <button class="btn btn-submit btn-primary">Tính ngày</button>
+        </form>
+
+        <div class="result-container">
+          <p class="result"><span class="result-bt-2"></span></p>
+        </div>
+      </section>
+
+      <!-- BT 3: Đọc số -->
+      <section class="section-container bt-3">
+        <h2>BT 3 : Đọc số</h2>
+
+        <form action="" class="form bt-3__form">
+          <div class="form-group-input">
+            <div class="form-group">
+              <input
+                type="number"
+                name=""
+                id="num"
+                placeholder="Nhập số 3 chữ số"
+              />
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-submit btn-primary">
+            Đọc số
+          </button>
+        </form>
+
+        <div class="result-container">
+          <p class="result"><span class="result-bt-3"></span></p>
+        </div>
+      </section>
+
+      <!-- BT 4: Tìm sinh viên xa trường nhất -->
+      <section class="section-container bt-4">
+        <h2>BT 4 : Tìm sinh viên xa trường nhất</h2>
+
+        <form action="" class="bt-4__form">
+          <div class="form-input-group">
+            <label for="">Sinh viên 1</label>
+            <div class="form-group-input">
+              <input
+                type="text"
+                name=""
+                id="firstName"
+                placeholder="Nhập tên"
+              />
+              <input
+                type="number"
+                name="name"
+                id="firstX"
+                placeholder="Nhập tọa độ x"
+              />
+              <input
+                type="number"
+                name=""
+                id="firstY"
+                placeholder="Nhập tọa độ y"
+              />
+            </div>
+          </div>
+
+          <div class="form-input-group">
+            <label for="">Sinh viên 2</label>
+            <div class="form-group-input">
+              <input
+                type="text"
+                name=""
+                id="secondName"
+                placeholder="Nhập tên"
+              />
+              <input
+                type="number"
+                name="name"
+                id="secondX"
+                placeholder="Nhập tọa độ x"
+              />
+              <input
+                type="number"
+                name=""
+                id="secondY"
+                placeholder="Nhập tọa độ y"
+              />
+            </div>
+          </div>
+
+          <div class="form-input-group">
+            <label for="">Sinh viên 3</label>
+            <div class="form-group-input">
+              <input
+                type="text"
+                name=""
+                id="thirdName"
+                placeholder="Nhập tên"
+              />
+              <input
+                type="number"
+                name="name"
+                id="thirdX"
+                placeholder="Nhập tọa độ x"
+              />
+              <input
+                type="number"
+                name=""
+                id="thirdY"
+                placeholder="Nhập tọa độ y"
+              />
+            </div>
+          </div>
+
+          <div class="form-input-group">
+            <label for="">Trường học</label>
+            <div class="form-group-input">
+              <input
+                type="number"
+                name="name"
+                id="schoolX"
+                placeholder="Nhập tọa độ x"
+              />
+              <input
+                type="number"
+                name=""
+                id="schoolY"
+                placeholder="Nhập tọa độ y"
+              />
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-submit btn-primary">Tìm</button>
+        </form>
+
+        <div class="result-container">
+          <p class="result"><span class="result-bt-4"></span></p>
+        </div>
+      </section>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
